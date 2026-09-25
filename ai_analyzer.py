@@ -31,17 +31,32 @@ GROQ_MODELS = [
 
 def get_api_key() -> str:
     """
-    Read the Groq API key from environment variables.
+    Read the Groq API key.
+
+    Priority:
+      1. Streamlit secrets (st.secrets) — used when deployed on Streamlit Cloud
+      2. Environment variable (GROQ_API_KEY) — used locally via .env file
 
     Raises:
-        ValueError: If the key is not set.
+        ValueError: If the key is not found in either location.
     """
+    # Try Streamlit secrets first (available when deployed on Streamlit Cloud)
+    try:
+        import streamlit as st
+        api_key = st.secrets.get("GROQ_API_KEY", "")
+        if api_key and api_key.strip():
+            return api_key.strip()
+    except Exception:
+        pass  # st.secrets not available outside Streamlit context
+
+    # Fall back to environment variable (local .env file)
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key or not api_key.strip():
         raise ValueError(
-            "GROQ_API_KEY is not set. "
-            "Get a free key at https://console.groq.com/keys "
-            "and add it to your .env file:\n  GROQ_API_KEY=gsk_your_key_here"
+            "GROQ_API_KEY is not set.\n"
+            "• Local: Add it to your .env file: GROQ_API_KEY=gsk_...\n"
+            "• Deployed: Add it in Streamlit Cloud dashboard → Settings → Secrets\n"
+            "Get a free key at: https://console.groq.com/keys"
         )
     return api_key.strip()
 
