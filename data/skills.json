@@ -1,0 +1,44 @@
+{
+  "programming": [
+    "Python", "Java", "C++", "C", "JavaScript", "TypeScript", "Go", "Rust",
+    "Ruby", "Swift", "Kotlin", "PHP", "Scala", "R", "MATLAB", "Perl"
+  ],
+  "cs_fundamentals": [
+    "Data Structures", "Algorithms", "OOP", "Object Oriented Programming",
+    "DBMS", "Database Management", "Operating Systems", "Computer Networks",
+    "SQL", "NoSQL", "System Design", "Data Structures and Algorithms", "DSA",
+    "Computer Architecture", "Compiler Design", "Theory of Computation"
+  ],
+  "web_development": [
+    "HTML", "CSS", "React", "Angular", "Vue", "Node.js", "Express",
+    "Django", "Flask", "FastAPI", "REST API", "GraphQL", "Bootstrap",
+    "Tailwind CSS", "jQuery", "Next.js", "Spring Boot", "Hibernate"
+  ],
+  "devops_tools": [
+    "Git", "GitHub", "GitLab", "Docker", "Kubernetes", "Linux", "Bash",
+    "CI/CD", "Jenkins", "Ansible", "Terraform", "Nginx", "Apache"
+  ],
+  "ai_ml": [
+    "Machine Learning", "Deep Learning", "NLP", "Natural Language Processing",
+    "Generative AI", "Scikit-learn", "TensorFlow", "PyTorch", "Keras",
+    "Computer Vision", "OpenCV", "Pandas", "NumPy", "Matplotlib",
+    "Seaborn", "Data Science", "Statistics", "Reinforcement Learning",
+    "LLM", "Large Language Models", "Transformers", "BERT", "GPT"
+  ],
+  "cloud": [
+    "AWS", "Azure", "Google Cloud", "GCP", "Heroku", "Vercel", "Netlify",
+    "Cloud Computing", "Serverless", "Lambda", "S3", "EC2"
+  ],
+  "databases": [
+    "MySQL", "PostgreSQL", "MongoDB", "SQLite", "Redis", "Oracle",
+    "Cassandra", "Firebase", "DynamoDB", "Elasticsearch"
+  ],
+  "soft_skills": [
+    "Communication", "Teamwork", "Problem Solving", "Leadership",
+    "Time Management", "Agile", "Scrum", "Jira"
+  ],
+  "other_tools": [
+    "Streamlit", "Jupyter", "VS Code", "IntelliJ", "Eclipse",
+    "Postman", "Figma", "Excel", "Power BI", "Tableau"
+  ]
+}
