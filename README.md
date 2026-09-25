@@ -1,5 +1,7 @@
 # 📄 AI Resume Analyzer & Job Matcher
 
+🚀 **Live Demo:** [https://ai-resume-analyzer-jv3rtmiexkwx8uzkatk4iy.streamlit.app/](https://ai-resume-analyzer-jv3rtmiexkwx8uzkatk4iy.streamlit.app/)
+
 A beginner-friendly, production-style portfolio project that analyzes your resume against a job description using NLP and Generative AI.
 
 ---
